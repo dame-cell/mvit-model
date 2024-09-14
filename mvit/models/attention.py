@@ -5,7 +5,7 @@
 import numpy
 import torch
 import torch.nn as nn
-from mvit.models.common import DropPath, Mlp
+from common import DropPath, Mlp
 from torch.nn.init import trunc_normal_
 
 

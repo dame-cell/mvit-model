@@ -33,7 +33,7 @@ def main(args):
     pretrained_weights = torch.load(args.path_to_model)
 
     # Load the weights into the model's state_dict
-    print("pretrained_weights",pretrained_weights)
+    print("pretrained_weights",pretrained_weights.keys())
     model.load_state_dict(pretrained_weights['model'])
 
     # Set the model to evaluation mode (if you're doing inference)

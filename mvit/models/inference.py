@@ -1,5 +1,5 @@
 from mvit_model import MViT 
-from .config import get_cfg 
+from .config.defaults import get_cfg 
 
 def count_parameters(model):
     """
@@ -15,5 +15,6 @@ def count_parameters(model):
 
 
 config = get_cfg()
+print("config",config)
 model = MVIT(config)
 print(count_parameters(model))

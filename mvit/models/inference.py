@@ -50,7 +50,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="MViT Model Loader and Image Display")
     parser.add_argument('--path_to_model', type=str, required=True, help="Path to the pre-trained model checkpoint (e.g., MViTv2_T_in1k.pyth)")
 
-    # Parse the arguments
+    ##Parse the arguments
     args = parser.parse_args()
 
     # Run the main function

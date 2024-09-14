@@ -189,10 +189,7 @@ _C.MVIT.HEAD_MUL = []
 
 # Stride size for the Pool KV at layer i.
 # Format: [[i, stride_t_i, stride_h_i, stride_w_i], ...,]
-_C.MVIT.POOL_KV_STRIDE = [
-    [2, 1, 4, 4],  # Layer 2: no pooling in time (irrelevant), 4x4 pooling in height and width
-    [4, 1, 2, 2],  # Layer 4: no pooling in time, 2x2 pooling in height and width
-]
+_C.MVIT.POOL_KV_STRIDE = [4, 4]
 
 
 # Initial stride size for KV at layer 1. The stride size will be further reduced with
@@ -201,7 +198,7 @@ _C.MVIT.POOL_KV_STRIDE_ADAPTIVE = None
 
 # Stride size for the Pool Q at layer i.
 # Format: [[i, stride_t_i, stride_h_i, stride_w_i], ...,]
-_C.MVIT.POOL_Q_STRIDE = []
+_C.MVIT.POOL_Q_STRIDE = [[0, 1, 1], [1, 2, 2], [2, 1, 1], [3, 2, 2], [4, 1, 1], [5, 1, 1], [6, 1, 1], [7, 1, 1], [8, 2, 2], [9, 1, 1]]
 
 # Kernel size for Q, K, V pooling.
 _C.MVIT.POOL_KVQ_KERNEL = (3, 3)

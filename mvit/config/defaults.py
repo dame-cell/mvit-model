@@ -189,7 +189,11 @@ _C.MVIT.HEAD_MUL = []
 
 # Stride size for the Pool KV at layer i.
 # Format: [[i, stride_t_i, stride_h_i, stride_w_i], ...,]
-_C.MVIT.POOL_KV_STRIDE = None
+_C.MVIT.POOL_KV_STRIDE = [
+    [2, 1, 4, 4],  # Layer 2: no pooling in time (irrelevant), 4x4 pooling in height and width
+    [4, 1, 2, 2],  # Layer 4: no pooling in time, 2x2 pooling in height and width
+]
+
 
 # Initial stride size for KV at layer 1. The stride size will be further reduced with
 # the raio of MVIT.DIM_MUL. If will overwrite MVIT.POOL_KV_STRIDE if not None.

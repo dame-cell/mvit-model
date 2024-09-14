@@ -15,6 +15,5 @@ def count_parameters(model):
 
 
 config = get_cfg()
-print("config",config)
-model = MVIT(config)
+model = MViT(config)
 print(count_parameters(model))

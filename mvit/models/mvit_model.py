@@ -13,7 +13,6 @@ from mvit.models.common import round_width
 from mvit.utils.misc import validate_checkpoint_wrapper_import
 from torch.nn.init import trunc_normal_
 
-from build import MODEL_REGISTRY
 
 try:
     from fairscale.nn.checkpoint import checkpoint_wrapper
@@ -97,7 +96,7 @@ class TransformerBasicHead(nn.Module):
         return x
 
 
-@MODEL_REGISTRY.register()
+#@MODEL_REGISTRY.register()
 class MViT(nn.Module):
     """
     Improved Multiscale Vision Transformers for Classification and Detection

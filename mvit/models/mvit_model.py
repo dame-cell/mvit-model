@@ -8,8 +8,8 @@ from functools import partial
 
 import torch
 import torch.nn as nn
-from mvit.models.attention import MultiScaleBlock
-from mvit.models.common import round_width
+from models.attention import MultiScaleBlock
+from models.common import round_width
 from mvit.utils.misc import validate_checkpoint_wrapper_import
 from torch.nn.init import trunc_normal_
 

@@ -29,7 +29,7 @@ def main(args):
     # Instantiate the MViT model using the config
     model = MViT(config)
 
-    print("model",nodel)
+    print("model",model)
     # Load the pre-trained weights from the path provided in args
     pretrained_weights = torch.load(args.path_to_model)
 

@@ -20,7 +20,7 @@ def count_parameters(model):
 
 def main(args):
     # Load the image from URL
-    url = "https://assets-c4akfrf5b4d3f4b7.z01.azurefd.net/assets/2024/04/BMDataViz_661fb89f3845e.png"
+    url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
     image = Image.open(requests.get(url, stream=True).raw)
 
     # Get configuration

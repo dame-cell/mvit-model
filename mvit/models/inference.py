@@ -34,7 +34,7 @@ def main(args):
 
     # Load the weights into the model's state_dict
     print("pretrained_weights",pretrained_weights.keys())
-    model.load_state_dict(pretrained_weights['model'])
+    model.load_state_dict(pretrained_weights['model_state'])
 
     # Set the model to evaluation mode (if you're doing inference)
     model.eval()

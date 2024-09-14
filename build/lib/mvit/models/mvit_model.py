@@ -13,7 +13,7 @@ from mvit.models.common import round_width
 from mvit.utils.misc import validate_checkpoint_wrapper_import
 from torch.nn.init import trunc_normal_
 
-from build import MODEL_REGISTRY
+from .build import MODEL_REGISTRY
 
 try:
     from fairscale.nn.checkpoint import checkpoint_wrapper

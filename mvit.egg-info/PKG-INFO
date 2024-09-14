@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mvit
+Version: 0.1
+Summary: Multiscale Vision Transformers
+Home-page: unknown
+Author: FAIR
+License-File: LICENSE
+Requires-Dist: yacs>=0.1.6
+Requires-Dist: pyyaml>=5.1
+Requires-Dist: termcolor>=1.1
+Requires-Dist: simplejson
+Requires-Dist: opencv-python
+Requires-Dist: torchvision>=0.4.2
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: fairscale

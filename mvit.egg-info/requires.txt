@@ -1,0 +1,9 @@
+yacs>=0.1.6
+pyyaml>=5.1
+termcolor>=1.1
+simplejson
+opencv-python
+torchvision>=0.4.2
+Pillow
+scikit-learn
+fairscale
